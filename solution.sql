@@ -1,1 +1,14 @@
-﻿SELECT * FROM distinguished_authors;
+﻿--1.	Which authors are represented in our store?
+--SELECT * FROM authors;
+--2.	Which authors are also distinguished authors?
+--SELECT * FROM distinguished_authors;
+--3.	Which authors are not distinguished authors?
+--SELECT first_name, last_name FROM authors EXCEPT SELECT first_name, last_name FROM distinguished_authors;
+--4.	How many authors are represented in our store?
+--SELECT COUNT(id) FROM authors;
+--5.	Who are the favorite authors of the employee with the first name of Michael?
+--SELECT * FROM employees WHERE first_name = 'Michael';
+--This results in one employee whose employee_id is 102
+--SELECT * FROM favorite_authors WHERE employee_id = 102;
+--This gives Michael's favorite authors_and_titles
+--6.	What are the titles of all the books that are in stock today?
