@@ -18,7 +18,15 @@
 -- JOIN books
 -- ON editions.book_id = books.id
 -- WHERE is_stocked = true;
-
 --7.	Insert one of your favorite books into the database. Hint: You’ll want to create data in at least 2 other tables to completely create this book.
+-- INSERT INTO books (id, title, author_id, subject_id)
+--     VALUES (42, 'The Hitchhikers Guide To The Galaxy', '42', '15');
+-- INSERT INTO authors (id, last_name, first_name)
+-- VALUES (42, 'Adams', 'Douglas');
+-- INSERT INTO stock (isbn, cost, retail, stock)
+-- VALUES (1400052920, 10, 11.29, 0);
+
 --8.	What authors have books that are not in stock?
 --9.	What is the title of the book that has the most stock?
+
+
