@@ -12,3 +12,13 @@
 --SELECT * FROM favorite_authors WHERE employee_id = 102;
 --This gives Michael's favorite authors_and_titles
 --6.	What are the titles of all the books that are in stock today?
+-- SELECT distinct books.title FROM daily_inventory 
+-- JOIN editions 
+-- ON daily_inventory.isbn = editions.isbn
+-- JOIN books
+-- ON editions.book_id = books.id
+-- WHERE is_stocked = true;
+
+--7.	Insert one of your favorite books into the database. Hint: You’ll want to create data in at least 2 other tables to completely create this book.
+--8.	What authors have books that are not in stock?
+--9.	What is the title of the book that has the most stock?
